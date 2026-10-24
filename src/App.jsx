@@ -1,5 +1,5 @@
 // src/App.jsx
-import { BrowserRouter, Routes, Route, useLocation } from 'react-router-dom';
+import { HashRouter, Routes, Route, useLocation } from 'react-router-dom'; 
 import { AnimatePresence } from 'framer-motion';
 import Layout, { scrollToTarget } from './components/layout/Layout';
 import Home from './pages/Home';
@@ -44,8 +44,8 @@ export default function App() {
   };
 
   return (
-    <BrowserRouter>
+    <HashRouter> 
       <AnimatedRoutes onNavigate={handleNavigate} />
-    </BrowserRouter>
+    </HashRouter>
   );
 }
